@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Himaneesh.dev — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header">
+  <div class="brand">
+    <div class="logo-mark">H</div>
+    <div class="brand-text">
+      <div class="name">Himaneesh<span class="dot"></span></div>
+      
+    </div>
+  </div>
+
+  <nav class="top-nav">
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Send Message</a>
+  </nav>
+</header>
+
+<main>
+<section class="panel contact-panel">
+  <h2 class="section-title">Send Message</h2>
+
+  <form id="contactForm" class="contact-form">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit" class="btn-submit">Send</button>
+  </form>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  emailjs.init("otQYXFKCLtuIWVZ7p");
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
